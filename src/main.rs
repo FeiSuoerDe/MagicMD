@@ -1,4 +1,4 @@
 slint::include_modules!();
 fn main() {
-    Main::new().run().run().unwrap();
+    Main::new().unwrap().run().unwrap();
 }
