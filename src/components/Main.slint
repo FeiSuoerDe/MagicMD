@@ -1,7 +1,39 @@
+import { Button } from "std-widgets.slint";
 export component Main inherits Window {
-    width: 1920px;
-    height: 1080px;
+    default-font-family: "jetBrains Mono";
+    default-font-size: 40px;
+    default-font-weight: 400;
+    height: 600px;
+    width: 600px;
+    background: #000000;
+    Rectangle {
+        background: white;
+        height: 100px;
+        width: 100px;
+        x: 0;
+        y: 0;
+        border-radius: 15px;
+        Button {
+            width: 100%;
+            height: 100%;
+            text: "1567823";
+            clicked => {
+                self.text = "456";
+                self.width = 300px;
+            }
+        }
+
+        drop-shadow-blur: 5px;
+        drop-shadow-color: #9f9f9f;
+        drop-shadow-offset-x: 10px;
+        drop-shadow-offset-y: 10px;
+    }
+
     Text {
-        text: "main";
+        width: 12px;
+        height: 100px;
+        x: 100px;
+        text: "12312313";
+        color: #939393;
     }
 }
